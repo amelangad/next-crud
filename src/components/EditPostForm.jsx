@@ -54,7 +54,6 @@ export default function EditPostForm({ id, title, description, author }) {
                     <input type="text"
                         name="newAuthor"
                         value={newAuthor}
-                        value={newTitle}
                         onChange={setFormData}
                         className="text-slate-0 w-full focus:outline-none bg-transparent"></input>
                 </div>
