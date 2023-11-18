@@ -14,7 +14,7 @@ const formReducer = (state, e) => {
 }
 
 
-export default function form() {
+export default function EditUserForm() {
 
     const router = useRouter();
     const [formData, setFormData] = useReducer(formReducer, {
@@ -26,7 +26,7 @@ export default function form() {
         e.preventDefault();
 
         try {
-            const res = await fetch('http://localhost:3000/api/users', {
+            const res = await fetch('http://localhost:3000/api/editUser', {
                 method: 'POST',
                 body: JSON.stringify(formData),
                 headers: { "Content-Type": "application/json" }
@@ -51,25 +51,25 @@ export default function form() {
                 <h1 className="text-slate-50 mb-6 text-2xl font-bold m-3">Sign Up</h1>
                 <input type="text"
                     required
-                    name="firstName"
+                    name="NewFirstName"
                     placeholder="name"
                     onChange={setFormData}
                     className="border w-3/4 px-2 py-1 focus:outline-none rounded-md m-auto" />
                 <input type="text"
                     required
-                    name="lastName"
+                    name="NewLastName"
                     placeholder="lastname"
                     onChange={setFormData}
                     className="border w-3/4 px-2 py-1 focus:outline-none rounded-md m-auto" />
                 <input type="email"
                     required
-                    name="email"
+                    name="NewEmail"
                     placeholder="email"
                     onChange={setFormData}
                     className="border w-3/4 px-2 py-1 focus:outline-none rounded-md m-auto" />
                 <input type="password"
                     required
-                    name="password"
+                    name="NewPassword"
                     placeholder="password"
                     onChange={setFormData}
                     className="border w-3/4 px-2 py-1 focus:outline-none rounded-md m-auto" />
@@ -78,14 +78,14 @@ export default function form() {
                     <label htmlFor="date" className="w-1/3 flex justify-center items-center">Date of birth:</label>
                     <input type="date"
                         required
-                        name="date"
+                        name="NewDate"
                         placeholder="birthday"
                         onChange={setFormData}
                         className="border w-full px-2 py-1 focus:outline-none rounded-md" />
                 </div>
                 <div className="flex flex-row  w-3/4 m-auto justify-between items-center">
                     <div className="w-full flex flex-row">
-                        <label htmlFor="gender"
+                        <label htmlFor="NewGender"
                             className="inline-block">
                             <input type="radio"
                                 required
@@ -103,7 +103,7 @@ export default function form() {
                             <input type="radio"
                                 className="mr-2"
                                 id="woman"
-                                name="gender"
+                                name="NewGender"
                                 placeholder="gender"
                                 onChange={setFormData}
                                 value="Woman" />

@@ -3,6 +3,7 @@ import getPosts from '../functions/getPosts';
 import BackBtn from '../components/BackBtn'
 import RemoveBtn from '../components/RemoveBtn'
 import {BiEdit, BiTrashAlt} from 'react-icons/Bi'
+import Link from 'next/link'
 
 
 export default async function Posts() {
@@ -23,7 +24,11 @@ export default async function Posts() {
       <p className ="text-slate-800 p-5 text-lg ">{item.year}</p>
       </div>
       <p className ="text-slate-500 p-3">{item.description}</p>
+      <div className =" w-full flex gap-3 justify-end items-center p-10">
+      <Link href ={`/editPost/${item._id}`}><BiEdit size={25} color={"green"}/></Link>
        <RemoveBtn id={item._id}/>
+       </div>
+       
 </div>
   ))}
   </div>

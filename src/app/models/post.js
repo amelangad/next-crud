@@ -4,7 +4,6 @@ const postSchema = new Schema ({
 title: String,
 description: String,
 author: String,
-year: Number,
 },
 {
 timestamps: true
