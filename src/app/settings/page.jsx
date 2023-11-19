@@ -1,10 +1,10 @@
 import React from 'react'
-import Image from '../../components/Image'
+import UploadImage from '../../components/UploadImage'
 
 export default function page() {
   return (
     <div className ="bg-slate-50 w-full min-h-full">
-    <Image/>
+    <UploadImage/>
     </div>
   )
 }

@@ -15,7 +15,7 @@ export default async function Posts() {
     <h1 className="text-3xl text-black py-10">
         Posts
       </h1>
-    <div className="w-1/2 min-h-[100vh] flex flex-col gap-5">
+    <div className="w-full px-10 lg:w-1/2 lg:px-0 min-h-[100vh] flex flex-col gap-5">
     {posts.map((item) => (
     <div key={item._id} className="w-full min-h-[300px] bg-white shadow-2xl rounded-xl flex flex-col gap-5">
       <div className ="flex flex-row justify-start gap-5">

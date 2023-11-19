@@ -32,10 +32,10 @@ export default function AddPostForm() {
 
     return (
         <>
-        <div className="w-1/3 bg-transparent text-white m-3 shadow-lg">
+        <div className="w-full mx-10 lg:w-1/3 bg-transparent text-white m-3 shadow-lg">
             <form name="form"  onSubmit={onSubmit}
                 className="flex flex-col gap-3 items-start  p-5">
-                <div className="flex flex-row text-slate-800 gap-5 border-b border-slate-600 w-1/2">
+                <div className="flex flex-row text-slate-800 gap-5 border-b border-slate-600 :w-1/2">
                     <label htmlFor="title">Title:</label>
                     <input type="text"
                         name="title"

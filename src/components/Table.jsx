@@ -11,8 +11,6 @@ export default async function Table() {
     {users.map((item) => (
         <div key ={item._id} className ="flex flex-col justify-center items-center gap-1">
         <p className="bg-slate-100 text-sm  text-black p-5">{item.firstName} {item.lastName}</p>
-      <img src={item.avatar}
-      className ="rounded-full w-40 h-40" alt="avatar"/>
         </div>
     ))}
 </div>

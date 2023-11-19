@@ -3,8 +3,7 @@
 import React, {useState} from 'react'
 import {useUser} from '../context/UserContext'
 
-
-export default function Image() {
+export default function UploadImage() {
     
  const {img, handleUploadImage} = useUser();
   return (
@@ -20,3 +19,6 @@ export default function Image() {
 </div>
   )
   }
+
+   
+                      

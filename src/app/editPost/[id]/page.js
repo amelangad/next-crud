@@ -16,7 +16,7 @@ const getPost = async (id)=> {
 }
 
 export default async function EditPost({params}) {
-  const {id} = params;
+const { id } = params;
 const { post } = await getPost(id);
  const {title, description, author} = post;
   return (
