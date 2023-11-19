@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import { BiTrashAlt } from 'react-icons/Bi'
+import { GoTrash } from "react-icons/go";
 import { useRouter } from 'next/navigation'
 
 export default function RemoveBtn({ id }) {
@@ -18,6 +18,6 @@ export default function RemoveBtn({ id }) {
         }
     }
     return (
-        <button className="cursor" onClick={removePost}><BiTrashAlt size={25} color={"red"} /></button>
+        <button className="cursor" onClick={removePost}><GoTrash  size={25} color={"red"} /></button>
     )
 }
