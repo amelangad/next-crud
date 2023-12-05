@@ -1,4 +1,5 @@
 This is next crud app. You can sign in  with "test@test.pl" email and "test" password or create your own account and log in. You can change profile photo, add your post, and delete or edit it.
+You can also send me an email from contact form.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
